@@ -1,0 +1,241 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ede Durga Rajya Veeramma — Portfolio</title>
+  <meta name="description" content="Portfolio of Ede Durga Rajya Veeramma — Computer Science student and developer." />
+
+  <style>
+    :root{
+      --bg: #1a1026;
+      --card: #241435;
+      --muted: #d1c4e9;
+      --accent: #ec4899;
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    body.light{
+      --bg: #fdf2f8;
+      --card: #ffffff;
+      --muted: #4b5563;
+      --accent: #d946ef;
+      --glass: rgba(2,6,23,0.03);
+      --glass-2: rgba(2,6,23,0.02);
+      color-scheme: light;
+    }
+
+    * {box-sizing: border-box}
+    html,body {height:100%; margin:0; background:linear-gradient(180deg,var(--bg), #071028 120%); color: #e6eef8; -webkit-font-smoothing:antialiased;}
+    body.light { color: #0b1220; }
+
+    .container{max-width:1000px;margin:40px auto;padding:24px;}
+
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between;margin-bottom:20px;}
+    .brand{display:flex;gap:16px;align-items:center;}
+
+    /* Profile photo */
+    .avatar-img {
+      width: 90px;
+      height: 150px;
+      border-radius: 100px;
+      object-fit: cover;
+      box-shadow: 0 6px 18px rgba(8,10,20,0.6);
+    }
+
+    h1{font-size:20px;margin:0}
+    p.lead{margin:0;color:var(--muted);font-size:14px}
+
+    .controls{display:flex;gap:10px;align-items:center;}
+    .btn{background:var(--card);color:inherit;border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:600;font-size:13px;box-shadow:0 4px 14px rgba(2,6,23,0.4);}
+    body.light .btn{ box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+
+    main{display:grid;grid-template-columns: 1fr 360px;gap:20px;align-items:start;}
+
+    .card{background:linear-gradient(180deg,var(--card), var(--glass));border-radius:14px;padding:18px;box-shadow: 0 8px 30px rgba(2,6,23,0.6);}
+    section + section{margin-top:14px}
+
+    .about h2,.skills h2,.projects h2,.experience h2,.education h2,.contact h2{margin:0 0 10px 0;font-size:16px;display:flex;align-items:center;gap:8px;}
+    .bio{line-height:1.5;color:var(--muted);font-size:14px}
+
+    .meta-grid{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;}
+    .meta{background:var(--glass-2); padding:8px 10px;border-radius:10px;font-size:13px;color:var(--muted);}
+
+    .skills-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
+
+    .project{border-radius:10px;padding:12px;margin-bottom:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);display:flex;justify-content:space-between;align-items:center;}
+    .project .left{max-width:72%}
+    .project h3{margin:0;font-size:14px}
+    .project p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
+    .links a{display:inline-block;margin-left:8px;text-decoration:none;font-size:13px;padding:6px 8px;border-radius:8px;background:var(--accent);color:white}
+
+    aside{display:flex;flex-direction:column;gap:14px;}
+    .card.small{padding:14px}
+    .contact .row{display:flex;gap:10px;align-items:center}
+    .contact .muted{color:var(--muted);font-size:13px}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px;}
+
+    @media (max-width: 980px){main{grid-template-columns: 1fr}aside{order:2}}
+
+    a:focus, button:focus{outline:2px solid rgba(79,70,229,0.25); outline-offset:2px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <!-- Profile photo -->
+        <img src="https://i.postimg.cc/3WQxYgGZ/veeru.jpg" alt="Ede Durga Rajya Veeramma" class="avatar-img" />
+
+        <div>
+          <h1>Ede Durga Rajya Veeramma</h1>
+          <p class="lead">B.Tech — Computer Science & Engineering • Aspiring Full-Stack Developer</p>
+        </div>
+      </div>
+
+      <div class="controls" role="toolbar" aria-label="site controls">
+        <button id="themeToggle" class="btn" title="Toggle light/dark">Toggle Theme</button>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <!-- ABOUT -->
+        <section class="card about" id="about" aria-labelledby="about-heading">
+          <h2 id="about-heading">About</h2>
+          <p class="bio">
+            A dedicated and goal-oriented Computer Science & Engineering student (B.Tech, VKR VNB & AGK College)
+            with hands-on experience in front-end development and full-stack internships. I enjoy building interactive web apps,
+            solving algorithmic problems, and learning backend/data fundamentals.
+          </p>
+          <div class="meta-grid" style="margin-top:12px;">
+            <div class="meta">Location: Vuyyuru/ Andhra Pradesh, India</div>
+            <div class="meta">CSE-(B.Tech)</div>
+            <div class="meta">Available for internships & entry-level roles</div>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="card skills" id="skills">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <div class="skill">Java</div><div class="skill">Python</div><div class="skill">C / C++</div>
+            <div class="skill">HTML & CSS</div><div class="skill">JavaScript</div><div class="skill">MySQL</div>
+            <div class="skill">Git / GitHub</div><div class="skill">VS Code / Eclipse</div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="card projects" id="projects">
+          <h2>Projects</h2>
+          <div class="project">
+            <div class="left">
+              <h3>Quiz App</h3>
+              <p>Interactive multiple-choice quiz built using HTML, CSS & JavaScript.</p>
+            </div>
+            <div class="links">
+              <a href="https://github.com/veeramma-538/Quiz.git" target="_blank">View</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="left">
+              <h3>Music Player App</h3>
+              <p>Responsive music player with play/pause, track navigation and progress bar.</p>
+            </div>
+            <div class="links">
+              <a href="https://github.com/veeramma-538/Music-Player-App.git" target="_blank">View</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="card experience" id="experience">
+          <h2>Internships & Training</h2>
+          <div style="color:var(--muted);font-size:14px;line-height:1.5">
+            <strong>Java Full Stack Intern</strong> — EXCELR (Jun–Jul 2025)<br/>
+            Core Java, MySQL, Advanced Java (JDBC).
+            <br/><br/>
+            <strong>Python Full Stack Intern</strong> — EXCELR (Jun–Jul 2024)<br/>
+            Core Python, Front-end, Database Management.
+          </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="card education" id="education">
+          <h2>Education</h2>
+          <div style="color:var(--muted);font-size:14px">
+            <strong>VKR, VNB & AGK College Of Engineering</strong><br />
+            B.Tech — CSE (2022 - 2026) • CGPA: 7.9<br/><br/>
+            <strong>Narayana Junior College</strong> — Intermediate • GPA: 9.4<br/><br/>
+            <strong>ZP High School</strong> — SSC • CGPA: 9.8
+          </div>
+        </section>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside>
+        <div class="card small contact" id="contact">
+          <h2>Contact</h2>
+          <div class="row"><div><div class="muted">Email</div><a href="mailto:veerammasai22@gmail.com">veerammasai22@gmail.com</a></div></div>
+          <div class="row" style="margin-top:10px"><div><div class="muted">Phone</div><a href="tel:+919391912780">+91 93919 12780</a></div></div>
+          <div style="margin-top:10px"><div class="muted">Links</div>
+            <div style="margin-top:6px">
+              <a class="btn" href="https://github.com/veeramma-538" target="_blank">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/ede-durga-rajya-veeramma-838b8b2b5/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card small">
+          <h2>Certificates & Achievements</h2>
+          <ul style="color:var(--muted);font-size:14px;line-height:1.6">
+            <li>Cloud Computing - NPTEL 2025</li>
+            <li>Java Full Stack - EXCELR 2025</li>
+            <li>Complete Java Developer Course - SAPIENZ RECRUIT 2025</li>
+            <li>Cyber Job Simulation - DELOITTE 2025</li>
+            <li>Data Science 101 - IBM 2025</li>
+            <li>Machine Learning Using Python - SIMPLILEARN 2025</li>
+            <li>Python Full Stack - EXCELR 2024</li>
+            <li>Member Of Coding Club — VKR, VNB College</li>
+          </ul>
+        </div>
+
+        <div class="card small">
+          <h2>Quick Download</h2>
+          <p style="color:var(--muted);font-size:14px">My Resume</p>
+          <a class="btn" href="https://docs.google.com/document/d/1OiJGmhhWaTfS4xsbHuOH82Y1yYbwLUDN/edit?usp=drive_link&ouid=116492656196236516611&rtpof=true&sd=true" target="_blank ">Download Resume</a>
+        </div>
+
+        <footer class="card small" style="text-align:left">
+          <div style="font-size:13px;color:var(--muted)">Built with ❤️ • Ede Durga Rajya Veeramma 2025</div>
+        </footer>
+      </aside>
+    </main>
+  </div>
+
+  <script>
+    (function(){
+      const b=document.body,btn=document.getElementById('themeToggle');
+      const saved=localStorage.getItem('site-theme');
+      if(saved==='light') b.classList.add('light');
+      btn.addEventListener('click',()=>{b.classList.toggle('light');localStorage.setItem('site-theme',b.classList.contains('light')?'light':'dark')});
+      if('scrollBehavior' in document.documentElement.style){
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{
+          a.addEventListener('click',e=>{
+            const t=document.querySelector(a.getAttribute('href'));
+            if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
